@@ -265,11 +265,11 @@ OUTPUT: H, V, E
 Function: Function for reading input file containing test cases.
           Generates appropriate heap H and lists V and E that map the entire graph.
 File format: 1. A graph having N vertices is numbered from 1-N.
-             2. The graph can be undirected/directed.
+             2. The graph must be undirected.
              3. There are N no. of lines where first character of the i'th line is 'i' and following are details of its connectivity
              4. Sample line:
                  3 4,50 8,78 10,61 19,48
-             5. In the above sample, (3,4), (3,8), (3,10) and (3,19) are all the edges (outgoing, in case of directed) from vertex with label 3
+             5. In the above sample, (3,4), (3,8), (3,10) and (3,19) are all the edges from vertex with label 3
                  (50, 78, 61, 48) are their respective edge lengths/weights.
 """  
 def readGraph(path):
